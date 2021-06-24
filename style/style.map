@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"\n@font-face {\n    font-family: edunline;\n    src: url(\"../fonts/edunline.ttf\");\n  }\n\n\n.sprite{\n    min-width:245px;\n    min-height: 400px;\n    background:transparent url(https://s.cdpn.io/13034/walker.png) 0 0 ;\n    background-repeat: no-repeat;\n    animation: walker 3s steps(10) infinite alternate;\n}\n\n\n@keyframes walker {\n    from {background-position:0 0; transform: translateX(600px); }\n    to {background-position:0 -4000px;transform: translateX(0px);}\n}\n\n\n"
+	],
+	"names": [],
+	"mappings": "AACA,UAAU;EACN,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,4BAA4B;;;;AAIrC,AAAA,OAAO,CAAA;EACH,SAAS,EAAC,KAAK;EACf,UAAU,EAAE,KAAK;EACjB,UAAU,EAAC,WAAW,CAAC,uCAAuC,CAAC,CAAC,CAAC,CAAC;EAClE,iBAAiB,EAAE,SAAS;EAC5B,SAAS,EAAE,MAAM,CAAC,EAAE,CAAC,SAAS,CAAC,QAAQ,CAAC,SAAS;CACpD;;AAGD,UAAU,CAAV,MAAU;EACN,IAAI;IAAE,mBAAmB,EAAC,GAAG;IAAE,SAAS,EAAE,iBAAiB;;EAC3D,EAAE;IAAE,mBAAmB,EAAC,SAAS;IAAC,SAAS,EAAE,eAAe"
+}

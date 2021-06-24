@@ -1,0 +1,22 @@
+
+@font-face {
+    font-family: edunline;
+    src: url("../fonts/edunline.ttf");
+  }
+
+
+.sprite{
+    min-width:245px;
+    min-height: 400px;
+    background:transparent url(https://s.cdpn.io/13034/walker.png) 0 0 ;
+    background-repeat: no-repeat;
+    animation: walker 3s steps(10) infinite alternate;
+}
+
+
+@keyframes walker {
+    from {background-position:0 0; transform: translateX(600px); }
+    to {background-position:0 -4000px;transform: translateX(0px);}
+}
+
+
