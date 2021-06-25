@@ -16,10 +16,24 @@
 .cloud img{
     width:200px;
     position: relative;
+    z-index: 10;
     animation: cloudMove 20s linear 2s infinite alternate;
 }
 
+.sun img{
+    width:100px;
+    animation: sunMove 30s linear 2s infinite alternate;
 
+}
+
+.moon img{
+    width:100px;
+    display: none;
+}
+
+
+
+/* ANIMATIONS */
 @keyframes cloudMove {
     0% { top: 0; left: 0; }
     30% { top: 90px; }
@@ -29,9 +43,29 @@
 }
 
 @keyframes sunMove {
-    0% { top: 0; left: 0; }
-    30% { top: 90px; }
-    50% { top: 150px; }
-    70% { top: 3px; }
-    100% { top: 60px; left: 90%; }
+
+        0% {
+          transform:  translate(0%,0%)  ;
+        }
+  
+        24% {
+          transform:  translate(-203px,-3px)  ;
+        }
+        38% {
+          transform:  translate(-144px,-116px)  ;
+        }
+        51% {
+          transform:  translate(-26px,-147px)  ;
+        }
+        66% {
+          transform:  translate(104px,-113px)  ;
+        }
+        80% {
+          transform:  translate(188px,-2px)  ;
+        }
+        100% {
+          transform:  translate(301px,198px)  ;
+        }
+      
+      
 }
