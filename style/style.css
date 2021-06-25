@@ -1,0 +1,37 @@
+.landscape, .cloud{
+    position: relative;
+}
+
+.landscape{
+    
+}
+.landscape img{
+    width:50%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+
+.cloud img{
+    width:200px;
+    position: relative;
+    animation: cloudMove 20s linear 2s infinite alternate;
+}
+
+
+@keyframes cloudMove {
+    0% { top: 0; left: 0; }
+    30% { top: 90px; }
+    50% { top: 150px; }
+    70% { top: 3px; }
+    100% { top: 60px; left: 90%; }
+}
+
+@keyframes sunMove {
+    0% { top: 0; left: 0; }
+    30% { top: 90px; }
+    50% { top: 150px; }
+    70% { top: 3px; }
+    100% { top: 60px; left: 90%; }
+}
