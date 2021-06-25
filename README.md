@@ -1,3 +1,3 @@
 # CSS Animations
-animation screenshot
+Animation screenshot
 ![screenshot](night_moon_cloud.PNG)
