@@ -1,7 +1,9 @@
 :root{
     --time: 40s;
 }
-
+body{
+    background-color: #0e1a1c;
+}
 .container{
     width:1440px;
     margin: 0 auto;
@@ -16,17 +18,28 @@
     animation: daynight var(--time) ease-in-out infinite;
 
     overflow: hidden;
+    box-shadow: inset 0px 0px 25px -3px black;
+    border: 1px solid darkslategrey;
 }
-
-#cloud {
+#cloud,#cloud1,#cloud2,#cloud3{
     position: absolute;
     top:0;
     left:-300px;
     width:200px;
     z-index: 10;
+}
+#cloud {
     animation: cloud var(--time) ease-in-out infinite;
     transition: all 1s ease-in-out;
 }
+
+#cloud1 {
+    top:350px;
+    left:-300px;
+    animation: cloud1 var(--time) ease-in-out infinite;
+    transition: all 1.3s ease-in-out;
+}
+
 #cloud:hover{
     transform: rotate(15deg) scale(1.1);
 }
@@ -63,10 +76,31 @@
 @keyframes cloud {
     0%{  
         top:0;
-        left:-300px;
+        left:-500px;
+    }
+    50%{  
+        top:95px;
+        left:clac(1440px / 2 + 50px);
     }
     100%{  
-        top:0;
+        top:350px;
+        left:1440px;
+    }
+}
+@keyframes cloud1 {
+    0%{  
+        top:350px;
+        left:-300px;
+    }
+
+    20%{  
+        top:100px;
+    }
+    40%{  
+        top:10px;
+    }
+    90%,100%{  
+        top:200px;
         left:1440px;
     }
 }
